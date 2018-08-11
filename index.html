@@ -28,56 +28,85 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>About me</h1>
         <p>Dongwon Kim <a href="mailto:dkim010@gmail.com"><small>dkim010@gmail.com</small></a>.</p>
         <p class="view">
           <a href="https://github.com/dkim010">GitHub <small>github.com/dkim010</small></a> 
           <a href="https://www.linkedin.com/in/dongwon-kim-68235a35?trk=hp-identity-name">LinkedIn <small>linkedin.com</small></a>
           <a href="https://scholar.google.com/citations?hl=ko&user=37h1QgcAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar <small>scholar.google.com</small></a>
         </p>
-        <p>
-            My research interests include conducting applying machine‑learning techniques to recommendation systems and mobile sensor data, conducting data analysis, and building/implementing systems for end‑users.
-            At NAVER, I am part of the CLOVA Music team, building a music recommendation system for CLOVA Music, which was released in May 2017.
-            My activity includes machine learning, recommendation systems, distributed computing, mobile sensing systems, and operating systems.
-        </p>
       </header>
 
       <section>
-        <h2>Technical skills</h2>
+        <p>
+          <h1>About me</h1>
+              Dongwon Kim is a software engineer conducting data analysis and applying machine‑learning techniques and cloud computing techniques for recommender systems and context-aware systems. 
+              He focused on context-aware system to providing indoor/outdoor localization and system engineering to manage and optimize the energy consumption for mobile devices by applying something new into Linux kernel. 
+              Now, he is part of music recommendation team, while contributing to the recommender system by training models by log data and audio contents data and providing the song recommendations consequently. 
+              His activities include machine learning, cloud computing, and mobile sensing.
+        </p>
+
         <table>
           <tbody>
             <tr>
-              <th>Languages</th>
-              <td>C, Python, Scala, Java, Unix shell scripts<td>
+              <th>Interests</th>
+              <td>Cloud computing, Data engineering, Recommender system<td>
             </tr>
             <tr>
-              <th>Cloud computing systems</td>
-              <td>Hadoop ecosystems, Microsoft Azure</td>
+              <th>Programming languages</td>
+              <td>Python, C, Unix shell scripts, Scala, Java<td>
             </tr>
             <tr>
-              <th>Skill keywords</td>
-              <td>Machine learning, Mobile sensing, Data analysis, Linux kernel programming</td>
+              <th>Technical keywords</td>
+              <td>Spark, MapReduce, Hive, Presto, Hbase,
+              Airflow, Consul & Nomad, Kafka, RabbitMQ,
+              Numpy, Faiss, Annoy</td>
             </tr>
           </tbody>
         </table>
-        <p/>
+        </br>
 
 
-        <h2>Project experience</h2>
+        <h1>Industrial experience</h1>
+        <h2>Music recommender system</h2>
         <ul>
-          <li>Music recommendation systems (<a href="https://clova.ai/ko">Naver Clova</a>)</li>
+          <li>About data</li>
+          <ul >
+            <li>Log data pipeline to extract item's features from log data</li>
+            <li>Content data pipeline to extract audio's features from audio with various models automatically</li>
+          </ul>
+          <li>About items</li>
+          <ul>
+            <li>Song and artist recommendation which you may also like based on word2vec and topic model (item to item)</li>
+            <li>Song recommendation from natural language based on word embeddings</li>
+            <li>Similarity search between millions of items while maintaining up-to-date information</li>
+            <li>Musical instrument classification with audio content data and convolutional neural networks</li>
+          </ul>
+          <li>About users</li>
+          <ul>
+            <li>Personalized recommendation with collaborative filtering</li>
+            <li>Artist suggestion which would be preferred to cold users</li>
+          </ul>
+          <li>Playlist generation</li>
+          <ul>
+            <li>Discover Songs: providing songs for each user which is not listened yet applying a mixture of collaborative filtering and content-based filtering method</li>
+          </ul>
+          <li>Realtime music recommender system from songs, artists, or natural language</li>
+        </ul>
+
+        </br>
+        <h2>Mobile sensing</h2>
+        <ul>
+          <li>Indoor and outdoor localization systems with WiFi fingerprinting</li>
+          <li>Action recognition with only accelerometers on smartwatch</li>
+          <li>Long-lived fitness tracking systems on smartwatch</li>
+        </ul>
+
+        </br>
+        <h1>Academic experience</h1>
+          <li>Energy management and mobile sensing for mobile devices</li>
             <ul>
-              <li>Artist recommendation with topic modeling</li>
-              <li>Song recommendation from natural language based on word embeddings</li>
-            </ul>
-          <li>Mobile sensing</li>
-            <ul>
-              <li>Indoor and outdoor localization systems by WiFi fingerprinting</li>
-              <li>Fitness tracking systems with smartwatch</li>
-            </ul>
-          <li>Energy management for mobile devices</li>
-            <ul>
-              <li>Content-centric display energy management</li>
+              <li>Content-centric display energy management by modifying Linux kernel</li>
+              <li>Differentiation between active and passive WiFi scanning for efficient WiFi fingerprinting</li>
               <li>Wake Lock management for Android devices</li>
             </ul>
           <li>Power analysis and kernel activity monitoring for mobile devices</li>
@@ -88,14 +117,16 @@
         </ul>
         
 
-        <h2>Education</h2>
+        </br>
+        <h1>Education</h1>
         <ul>
           <li>M.Sc. in Computer Science, Yonsei University, Korea, August 2015 (Advisor: Prof. Hojung Cha)</li>
           <li>B.S. in Computer Science, Yonsei University, Korea, February 2011</li>
         </ul>
 
 
-        <h2>Publications</h2>
+        </br>
+        <h1>Publications</h1>
         <ul>
           <li>B. Jeon, A. Kim, C. Kim, <b>D. Kim</b>, J. Park, and J. Ha, “Music Emotion Recognition via End-to-End Multimodal Neural Networks”, in Proceeding of the 9th Conference on Recommender Systems (RecSys), ACM, Aug, 2017.</li>
           <li>J. Ha, A. Kim, <b>D. Kim</b>, C. Kim, and J. Park, “Music Highlight Extraction via Convolutional Recurrent Attention Networks”, Machine Learning for Music Discovery Workshop in International Conference on Machine Learning (ICML), Aug, 2017.</li>
@@ -113,28 +144,31 @@
           <li>C. Yoon, <b>D. Kim</b>, W. Jung, C. Kang, H. Cha, “AppScope: Application Energy Metering Framework for Android Smartphone using Kernel Activity Monitoring”, in Proceeding of 2012 USENIX Annual Technical Conference (USENIX ATC), Usenix, Boston, MA, USA, 2012.</li>
           <li>W. Jung, <b>D. Kim</b>, H. Cha, “Observing Thermal Characteristics of Energy-Aware Mobile Devices”, in Proceeding of IEEE 18th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), IEEE, Seoul, Korea, 2012.</li>
         </ul>
-        <p/>
+        </p>
 
 
-        <h2>Patent activities</h2>
+        </br>
+        <h1>Patent activities</h1>
         <ul>
           <li>Content-Centric Power Management Technique, Korea Patent Applied, 2014</li>
           <li>Content-Centric Power Management Technique, Korea Patent Applied, 2014</li>
           <li>Estimation of Remaining Battery Capacity Considering Battery Chemical Characteristics, Korea Patent Applied, 2013</li>
           <li>Active battery interface for providing application-specific energy information, Korea Patent Applied, 2013</li>
         </ul>
-        <p/>
+        </p>
 
 
-        <h2>Awards</h2>
+        </br>
+        <h1>Awards</h1>
         <ul>
           <li>Awarded Top 3 Works in Graduation Exhibition, LG MC Research Center, 2010</li>
           <li>Awarded KT Econovation 1st Fair (iPhone App Contest), KT, 2010</li>
         </ul>
 
 
-        <p/>
-        <h2>Academic experiences</h2>
+        </p>
+        </br>
+        <h1>Academic experiences</h1>
         <ul>
           <li>Educational PC, Teaching Assistant, Fall, 2014, Yonsei University</li>
           <li>C Programming, Teaching Assistant, Spring, 2014, Yonsei University</li>
@@ -145,8 +179,9 @@
       </section>
       <footer>
         <p>This page is maintained by <a href="http://github.com/dkim010">Dongwon Kim</a><br/>
-        <!-- <small>Last updated on Oct 5, 2016</small> -->
-        <small>Last updated on July 1, 2017</small>
+          <!-- <small>Last updated on Oct 5, 2016</small> -->
+          <!-- <small>Last updated on July 1, 2017</small> -->
+          <small>Last updated on August 11, 2018</small>
         </p>
 
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
