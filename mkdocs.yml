@@ -2,6 +2,7 @@ site_name: dkim010.github.io
 site_url: https://dkim010.github.io/
 repo_url: https://github.com/dkim010/dkim010.github.io
 theme:
+  custom_dir: overrides
   name: material
   palette:
     - scheme: default
@@ -20,10 +21,13 @@ theme:
     - navigation.top
     - navigation.tabs
     - toc.follow
-    - toc.integrate
+    - toc.integratea
+
 watch:
   - docs/
+  - overrides/
   - mkdocs.yml
+
 plugins:
   - search
   - autorefs
@@ -34,6 +38,18 @@ plugins:
         python:
           options:
             show_source: true
+  - blog:
+      enabled: true
+      blog_dir: blog
+      blog_toc: true
+      categories: true
+      categories_toc: true
+      pagination: true
+      pagination_per_page: 20
+      post_url_date_format: yyyy
+  - tags:
+      enabled: true
+
 markdown_extensions:
   - md_in_html
   - attr_list
@@ -46,10 +62,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.magiclink
+
 extra:
   analytics:
     provider: google
     property: UA-106648352-1
+
 nav:
-  - 'Home': index.md
-  - 'CV': oldcv/index.html
+  - 'CV': index.md
+  - 'Blog': blog/
+  - 'CV (Deprecated)': oldcv/index.html
