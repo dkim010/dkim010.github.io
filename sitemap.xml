@@ -5,4 +5,54 @@
          <lastmod>2023-10-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/2023/distributed-keyvalue-store/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/2023/kubernetes/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/2023/rust-1/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/archive/2023/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/category/database/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/category/nosql/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/category/distributed/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/category/kubernetes/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dkim010.github.io/blog/category/rust/</loc>
+         <lastmod>2023-10-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
