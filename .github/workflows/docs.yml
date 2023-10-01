@@ -1,0 +1,23 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11.3"
+      - name: install packages
+        run: |
+          pip install -r requirements.txt
+      - name: create docs
+        run: |
+          git fetch origin gh-pages || echo
+          mkdocs gh-deploy

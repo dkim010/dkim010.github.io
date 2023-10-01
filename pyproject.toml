@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dkim010-github-io"
+version = "0.1.0"
+description = ""
+authors = ["Dongwon Kim <dkim010@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-material = "^9.4.2"
+mkdocs-section-index = "^0.3.8"
+mkdocs-literate-nav = "^0.6.1"
+mkdocs-glightbox = "^0.3.4"
+mkdocstrings = "^0.23.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

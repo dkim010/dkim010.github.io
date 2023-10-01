@@ -1,0 +1,55 @@
+site_name: dkim010.github.io
+site_url: https://dkim010.github.io/
+repo_url: https://github.com/dkim010/dkim010.github.io
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  logo: static/icon-512.png
+  favicon: static/favicon.ico
+  font:
+    text: Inclusive Sans
+  features:
+    - navigation.top
+    - navigation.tabs
+    - toc.follow
+    - toc.integrate
+watch:
+  - docs/
+  - mkdocs.yml
+plugins:
+  - search
+  - autorefs
+  - section-index
+  - glightbox
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+extra:
+  analytics:
+    provider: google
+    property: UA-106648352-1
+nav:
+  - 'Home': index.md
+  - 'CV': oldcv/index.html
