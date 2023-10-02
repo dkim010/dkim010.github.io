@@ -1,0 +1,138 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=1.0cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+% \geometry{left=1.6cm, top=1.0cm, right=1.6cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.6cm, top=1.7cm, right=1.6cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{}{DONGWON KIM}
+% \position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\position{Software Engineer}
+% \address{Sungnam, Korea}
+
+\mobile{} %FIXME
+\email{dkim010@gmail.com}
+% \homepage{dkim010.github.io}
+\github{dkim010}
+\linkedin{dongwon-kim-68235a35}
+\googlescholar{37h1QgcAAAAJ}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Claud D. Park~~~·~~~Résumé}
+%   {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+
+% \input{201810/summary.tex}
+% \input{201810/experience.tex}
+% \input{common/education.tex}
+% \input{201810/publication.tex}
+
+
+% \input{201902/summary.tex}
+% \input{201902/experience.tex}
+% \pagebreak
+% \input{common/education.tex}
+% \input{201902/publication.tex}
+
+
+% \input{201908/summary.tex}
+% \input{201908/experience.tex}
+% % \pagebreak
+% \input{common/education.tex}
+% \input{201902/publication.tex}
+
+
+% \input{202110/summary.tex}
+% \input{202110/experience.tex}
+
+
+\input{202310/summary.tex}
+\input{202310/experience.tex}
+
+
+% \pagebreak
+\input{common/education.tex}
+\input{201902/publication.tex}
+
+
+
+%-------------------------------------------------------------------------------
+\end{document}

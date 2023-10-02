@@ -1,0 +1,74 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+    \cventry
+        {Data Engineer \& Technical Leader} % Title
+        {Dec. 2018 - Present} % Date(s)
+        {FLO Music Service of Dreamus Company in SK Telecom, } % Organization
+        {Seoul, Korea}% Location
+        { % Corp desc
+            SK Telecom is the largest mobile operator in Korea, and FLO music service has 1.3 million memberships.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf Data Engineering and Infrastructure Developments} \\
+                    - Migration to AWS from on-premise infrastructure \\
+                        \descstyle{We want to get scalable big data platform, and now, under 100 engineers are using this infrastructure}
+                        \techstyle{EC2, VPC, S3, EMR, CloudWatch} \\
+                    - Build a data lake including music metadata and streaming log data \\
+                        \descstyle{There are about 10GB of daily log data and 20 GB of music metadata and the data lake manages tables without human cost}
+                        \techstyle{S3, Glue, EMR, Hive, Spark, Presto, Sqoop, Docker, Python, Django, AWS Parameter Store, Kafka, Logstash, Kafka Connect, Elasticsearch} \\
+                    - Visualizing data from multiple sources \\
+                        \descstyle{Now, we measure the right KPIs on our dashboards}
+                        \techstyle{Presto, Redash} \nn
+                }
+                \item {
+                    {\bf Music Recommender System} \\
+                    - Personalized playlist generation with trained models \\
+                        \descstyle{27 percentages of users listen with these playlists in Aug. 2019, though under 5 percentages of users listened in Jan. 2019}
+                        \techstyle{Fasttext, Faiss, Spark} \\
+                    - Continuous extraction of mood features from songs with music information retrieval techniques \\
+                        \descstyle{That pipeline extract those features as soon as a song is released newly. Mood information has been used for the recommendation based on users' mood preference}
+                        \techstyle{Tensorflow, Lambda, ECS, SQS, DynamoDB, S3, Glue, RabbitMQ, Kubernetes} \nn
+                }
+            \end{cvitems}
+        }
+
+    \cventry
+        {Software Engineer \& Data Engineer} % Title
+        {Aug. 2015 - Nov. 2018} % Date(s)
+        {Music Streaming Service in NAVER Corp., } % Organization
+        {Sungnam, Korea}% Location
+        { % Corp desc
+            NAVER is Korea's top search portal, and NAVER music streaming service has a membership of over 0.8 million in 2018.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf Music Recommender System} \\
+                    - Item recommendation of similarity search among millions of items while maintaining up-to-date information \\
+                        \descstyle{These songs and artists have been used to recommend preferable songs with collaborative filtering}
+                        \techstyle{Gensim, Spark MLLib, Fasttext, Annoy, Faiss} \\
+                    - Modeling musical instrument classifier with audio content data and convolutional neural networks \\
+                        \descstyle{Instrumental songs such as orgel songs have been recommend in special cases}
+                        \techstyle{Keras, MIR (Music Information Retrieval), CNN} \\
+                    - Development of a real-time recommender system (ratio station) applying user's listening feedback \\
+                        \descstyle{About 20 percentage of users were listening with this continuous ratio station in Dec. 2018}
+                        \techstyle{Python, Redis, Similarity Search, Matrix Factorization} \\
+                    - Recommendation songs not listened yet applying a mixture of collaborative/content-based filtering \\
+                        \descstyle{About 10 percentage of users were listening discovered songs in Dec. 2018}
+                        \techstyle{Spark, Hive, Matrix Factorization} \\
+                    - Design/development of A/B testing platform 
+                        \techstyle{HBase, Spark, SpringBoot} \nn
+                }
+            \end{cvitems}
+        }
+\end{cventries}

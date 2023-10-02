@@ -1,0 +1,117 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+    \cventry
+        {Senior Machine Learning Engineer} % Title
+        {Mar. 2022 - Present} % Date(s)
+        {Toss of Viva Republica, } % Organization
+        {Seoul, Korea}% Location
+        { % Corp desc
+            Viva Republica operates financial super app Toss including payment services, financial services, and stock brokerage with over 15 million active users in Jun. 2023.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf TBD} \\
+                }
+            \end{cvitems}
+        }
+
+    \cventry
+        {Technical Leader} % Title
+        {Mar. 2020 - Mar. 2022} % Date(s)
+        {Finance Service of NAVER FINANCIAL Corp. in NAVER Corp., } % Organization
+        {Sungnam, Korea}% Location
+        { % Corp desc
+            NAVER FINANCIAL operates financial platform including online payments, loan services from Nov. 2019, and the number of monthly active users is over 13 million in Mar. 2021.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf Data Pipeline} \\
+                    - Building and sustaining a secure Hadoop environment \\
+                        \descstyle{The Hadoop has about two hundreds user}
+                        \techstyle{Hadoop, Kerberos, Ranger, Ansible, OpenWhisk} \\
+                    - Automatically collecting the massive and various formatted data from diverse data sources \\
+                        \descstyle{Only configurations are required when ingesting new data without source codes}
+                        \techstyle{Hive 3.0, Compactor, CDC (Change Data Capture), OracleDB, MySQL, MongoDB, Hive, Kafka Connect, Airflow, Spark} \nn
+                }
+                \item {
+                    {\bf Data Science} \\
+                    - For target marketing, identifying users on specific conditions such as vehicle owners, potential customers, and so on \\
+                        \descstyle{We profile users for preparing diverse finance services}
+                        \techstyle{LightGBM, Lift Score, Bayesian Optimization} \\
+                    - Analyzing financial and commercial data for promotion activities of NAVER FINANCIAL services \\
+                        \techstyle{Propensity Score Analysis, Casual Discovery} \nn
+                }
+            \end{cvitems}
+        }
+
+    \cventry
+        {Technical Leader} % Title
+        {Dec. 2018 - Mar. 2020} % Date(s)
+        {FLO Music Service of Dreamus Company in SK Telecom, } % Organization
+        {Seoul, Korea}% Location
+        { % Corp desc
+            SK Telecom is the largest mobile operator in Korea, and FLO music service has 1.3 million memberships.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf Infrastructure Developments} \\
+                    - Migration to AWS from on-premise infrastructure \\
+                        \descstyle{We want to get scalable big data platform, and now, under 100 engineers are using this infrastructure}
+                        \techstyle{EC2, VPC, S3, EMR, Aurora, Presto, Redash, CloudWatch} \nn
+                }
+                \item {
+                    {\bf Music Recommender System} \\
+                    - Design/development a data pipeline including log data and music metadata \\
+                        \descstyle{There are about 10 GB of daily log data and 20 GB of music metadata}
+                        \techstyle{S3, Glue, Hive, Spark, Presto, Sqoop, Docker} \\
+                    - Personalized playlist generation with trained models \\
+                        \descstyle{27 percentages of users listen with these playlists in Aug. 2019, though under 5 percentages of users listened in Jan. 2019}
+                        \techstyle{Fasttext, Faiss, Spark} \\
+                    - Continuous extraction of mood features from songs with music information retrieval techniques \\
+                        \descstyle{Mood information has been used for the recommendation based on users' mood preference}
+                        \techstyle{Tensorflow, Lambda, ECS, SQS, DynamoDB, S3, Glue} \nn
+                }
+            \end{cvitems}
+        }
+
+    \cventry
+        {Software Engineer} % Title
+        {Aug. 2015 - Nov. 2018} % Date(s)
+        {Music Streaming Service in NAVER Corp., } % Organization
+        {Sungnam, Korea}% Location
+        { % Corp desc
+            NAVER is Korea's top search portal, and NAVER music streaming service has a membership of over 0.8 million in 2018.
+        }
+        { % Description(s) of tasks/responsibilities
+            \begin{cvitems}
+                \item {
+                    {\bf Data Pipeline} \\
+                    - Development of a pipeline to extract mood features from song \\
+                        \descstyle{That pipeline extract those features as soon as a song is released newly}
+                        \techstyle{Python, PyArrow, RabbitMQ, Nomad, Consul} \\
+                    - Design/development of A/B testing platform 
+                        \techstyle{HBase, Spark, SpringBoot} \nn
+                }
+                \item {
+                    {\bf Music Recommender System} \\
+                    - Development of a real-time recommender system (ratio station) applying user's listening feedback \\
+                        \descstyle{About 20 percentage of users were listening with this continuous ratio station in Dec. 2018}
+                        \techstyle{Python, Redis, Similarity Search, Matrix Factorization, Gensim, Fasttext, Annoy, Faiss} \\
+                    - Recommendation songs not listened yet applying a mixture of collaborative/content-based filtering \\
+                        \descstyle{About 10 percentage of users were listening discovered songs in Dec. 2018}
+                        \techstyle{Spark, Hive, Matrix Factorization} \nn
+                }
+            \end{cvitems}
+        }
+\end{cventries}
