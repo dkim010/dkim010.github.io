@@ -26,7 +26,7 @@ jobs:
         with:
           root_file: resume.tex
           compiler: xelatex
-          work_in_root_file_dir: latex/
+          working_directory: latex/
       - name: upload pdf
         uses: actions/upload-artifact@v3
         with:
