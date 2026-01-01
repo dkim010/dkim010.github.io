@@ -1,11 +1,7 @@
-.PHONY: init requirements serve cv-build-image cv-push-image cv
+.PHONY: init serve cv-build-image cv-push-image cv
 
 init:
-	pip install poetry==1.4.2
-	poetry config installer.modern-installation false
-
-requirements:
-	poetry export -f requirements.txt --output requirements.txt --without-hashes
+	uv sync
 
 serve:
 	uv run mkdocs serve

@@ -13,14 +13,14 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v3
         with:
-          python-version: "3.11.3"
+          python-version: "3.12"
       - name: install packages
         run: |
-          pip install -r requirements.txt
+          make init
       - name: create docs
         run: |
           git fetch origin gh-pages || echo
-          mkdocs gh-deploy
+          uv run mkdocs gh-deploy
       - name: compile latex
         uses: xu-cheng/latex-action@v3
         with:
