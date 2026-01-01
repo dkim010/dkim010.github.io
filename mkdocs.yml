@@ -21,7 +21,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - toc.follow
-    - toc.integratea
+    - toc.integrate
 
 watch:
   - docs/
@@ -38,17 +38,18 @@ plugins:
         python:
           options:
             show_source: true
-  - blog:
-      enabled: true
-      blog_dir: blog
-      blog_toc: true
-      categories: true
-      categories_toc: true
-      pagination: true
-      pagination_per_page: 20
-      post_url_date_format: yyyy
+#  - blog:
+#      enabled: false #true
+#      blog_dir: blog
+#      blog_toc: true
+#      categories: true
+#      categories_toc: true
+#      pagination: true
+#      pagination_per_page: 20
+#      post_url_date_format: yyyy
   - tags:
       enabled: true
+  - mkdocs-pdf
 
 markdown_extensions:
   - md_in_html
@@ -70,5 +71,4 @@ extra:
 
 nav:
   - 'CV': index.md
-  - 'Blog': blog/
   - 'CV (Deprecated)': oldcv/index.html

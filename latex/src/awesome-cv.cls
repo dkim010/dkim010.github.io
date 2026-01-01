@@ -207,18 +207,22 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\slshape\color{graytext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entryposistyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\slshape\color{graytext} #1}}
-\newcommand*{\entrycorpstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{darktext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1.2em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entrycorpstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\slshape\color{darktext} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 \newcommand*{\entrygpastyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{darktext} #1}}
 \newcommand*{\entrytitlepaper}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{darktext} #1}}
 
 % element
+\newcommand*{\projtitle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{darktext}\textbf{#1}}}
+\newcommand*{\posistyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{darktext} #1}}
 \newcommand*{\descstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{darktext} #1}}
 \newcommand*{\techstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{darktext} : #1}}
 % \newcommand*{\nn}{{\linespace{0.8}}}
 % \newcommand*{\nn}{\fontsize{3pt}{0.1em}}
-\newcommand*{\nn}{\vspace{1.3mm}}
+\newcommand*{\nn}{\vspace{0.4em}}
+\newcommand*{\vv}{\vspace{0.2em}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext}#1}}
@@ -604,7 +608,7 @@
     \vspace{-2.0mm}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.5cm} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 8cm} R{8cm}}
 }
 
 \newcommand*{\cvacademicentry}[3]{%
@@ -628,25 +632,60 @@
     \end{tabular*}%
 }
 
-\newcommand*{\cveducationentry}[7]{%
+\newcommand*{\cveducationentry}[5]{%
     \cventryheader
-        \entrytitlestyle{#1} & \entrydatestyle{#2} \\
-        \entrypositionstyle{#3} \entrycorpstyle{#5} & \entrylocationstyle{#4} \\
-        \entrytitlepaper{#6} & \entrygpastyle{#7}
+    \ifempty{#5}
+        {
+            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+            \entrypositionstyle{#3} & \entrylocationstyle{#4}
+        }
+        {
+            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+            \entrypositionstyle{#3} & \entrylocationstyle{#4} \\
+            \multicolumn{2}{L{\textwidth}}{\entrytitlepaper{#5}}
+        }
     \end{tabular*}%
 }
 
 \newcommand*{\cventry}[6]{%
     \cventryheader
-    \ifempty{#5}
-        {\entrytitlestyle{#1} & \entrydatestyle{#2} \\
-            \entrypositionstyle{#3} & \entrylocationstyle{#4}\\
-            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}}
-        {\entrytitlestyle{#1} & \entrydatestyle{#2} \\
+    \ifempty{#3#4}
+        {
+            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+            \entrycorpstyle{#5} \\
+            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}
+        }
+        {
+            \entrytitlestyle{#1} & {\entrydatestyle{#2}} \\
             \entrypositionstyle{#3} & \entrylocationstyle{#4} \\
             \entrycorpstyle{#5} \\
-            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}}
-  \end{tabular*}%
+            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}
+        }
+    \end{tabular*}%
+}
+
+\newcommand*{\corpentry}[5]{%
+    \cventryheader
+    \ifempty{#4}
+        {
+            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+            \multicolumn{2}{L{\textwidth}}{\entrycorpstyle{#3}} \\
+            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+        }
+        {
+            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+            \parbox[t]{\textwidth - 8cm}{\vspace{-1.5ex}\entrycorpstyle{#3}}
+            &
+            \parbox[t]{8cm}{\vspace{-1.5ex}\raggedleft\entryposistyle{#4}} \\
+            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+        }
+%        {
+%            \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+%            \multicolumn{2}{L{\textwidth}}{\entrycorpstyle{#3}} \\
+%            \multicolumn{2}{R{\textwidth}}{\entryposistyle{#4}} \\
+%            \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+%        }
+    \end{tabular*}%
 }
 
 % Define an environment for cvsubentry

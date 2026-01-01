@@ -1,0 +1,103 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+\corpentry
+{ML/AI Platform in Viva Republica} % Title
+{Seoul, Korea, May 2022 - Present} % Date(s)
+{Financial super app, Toss, has 15M+ MAU in Sep. 2023.} % Corp desc
+{ % Positions
+    - Principal Machine Learning Engineer (Nov. 2025 ~ Present) \newline
+%    - Principal Machine Learning Engineer (Nov. 2025 ~ Present):
+%    \posistyle{ in recognition of technical leadership and company-wide impact, while remaining on the individual contributor track.} \newline
+    - Interim AI Platform Team Leader (Aug. 2025 – Dec. 2025) \newline
+    - Machine Learning Platform Team Leader (Oct. 2024 ~ Present)
+}
+{ % Description(s) of tasks/responsibilities
+    \begin{cvitems}
+        \item {
+            \projtitle{Leadership \& Platform Ownership} \vv \\
+            - \textbf{Scaled ML Organization}: Expanded leadership from a single ~5-person team to coordinating 20+ engineers across multiple teams, unifying architectural standards and platform strategy. \vv \\
+            - \textbf{Strategic Vision}: Spearheaded the technical evolution of a company-wide ML platform supporting recommendation, ads, and generative AI/Agent workloads. \vv \\
+            - \textbf{Operational Excellence}: Consolidated fragmented initiatives into a unified platform, significantly reducing duplicated efforts and boosting engineering velocity.
+            \nn
+        }
+        \item {
+            \projtitle{ML/AI Platform} \vv \\
+            - \textbf{Scalable Inference Engine \& Lifecycle Management}: Architected a large-scale inference platform handling 10K+ RPS and hundreds of model inferences per request, while centralizing the control plane for hundreds of models, reducing deployment lead time by 70\% (to approx. 30\% of previous levels). \vv \\
+            - \textbf{Feature Store \& Standardized Framework}: Developed an in-house Feature Store guaranteeing P95 latency under 15ms and RecoKit ensuring training-serving consistency, accelerating model time-to-market from days to hours. \vv \\
+            - \textbf{Vector Retrieval}: Built and operated dual-datacenter vector database clusters with CPU/GPU hybrid indexing, enabling real-time ingestion and low-latency search over tens of millions of embeddings for semantic search and targeting. \vv \\
+            - \textbf{GPU Efficiency}: Built and optimized a Kubernetes GPU platform to increase 30\%+ GPU util. by reclaiming idle GPU capacity and Volcano/selective gang scheduling to support 100+ engineers. \vv \\
+            - \textbf{Automated DAG Builder}: Engineered an Airflow-based factory that enabled 100+ non-data engineers to operate 500+ production DAGs daily, featuring automated SLA enforcement, lineage tracking, and infrastructure rate-limiting.
+            \nn
+        }
+    \end{cvitems}
+}
+\nn \nn \nn
+
+\corpentry
+{Finance Data Platform of NAVER FINANCIAL} % Title
+{Sungnam, Korea, Mar. 2020 - May 2022} % Date(s)
+{Financial services has 13M+ MAU in Mar. 2021.} % Corp desc
+{ % Positions
+    - Technical Leader (Jul. 2020 ~ May 2022)
+}
+{ % Description(s) of tasks/responsibilities
+    \begin{cvitems}
+        \item {
+            \projtitle{Financial Data/ML Platform} \vv \\
+            - \textbf{Secure Data Infra}: Designed and operated a Hadoop-based secure data platform supporting 200+ internal users, enabling reproducible analytics in regulated financial environments. \vv \\
+            - \textbf{ETL Framework}: Built a config-driven data ingestion to standardize data collection, validation, and versioning across heterogeneous sources. \vv \\
+%            - \textbf{Audience Targeting Pipelines}: Supported audience targeting models by designing end-to-end ML pipelines for feature generation, offline training, experiment tracking, and large-scale batch inference for marketing use cases. \vv \\
+            - \textbf{Causal Inference}: Established an experiment analysis framework to evaluate model-driven campaigns, including causal impact analysis and feedback loops for iterative model improvement
+            \nn
+        }
+    \end{cvitems}
+}
+\nn \nn \nn
+
+\corpentry
+{FLO Music Service of Dreamus Company} % Title
+{Seoul, Korea, Dec. 2018 ~ Mar. 2020} % Date(s)
+{Dreamus Company, a subsidiary of SK Telecom, has 2M+ memberships in Jan. 2020.} % Corp desc
+{ % Positions
+    - Recommendation Team Leader (Jan. 2019 ~ Mar. 2020)
+}
+{ % Description(s) of tasks/responsibilities
+    \begin{cvitems}
+        \item {
+            \projtitle{Music Recommender System} \vv \\
+            - \textbf{Cloud Transformation}: Built a cloud-native big data platform from scratch, replacing legacy on-premise systems and supporting 100+ engineers. \vv \\
+%            - \textbf{Log \& Metadata Pipelines}: Designed automated ETL pipelines handling 10GB/day of user interaction logs and large-scale music metadata, ensuring data availability for downstream ML tasks. \vv \\
+            - \textbf{Personalized Playlist}: Implemented embedding-based recommendation pipelines that increased playlist adoption rates from under 5\% to 27\% within six months. \vv \\
+            - \textbf{MIR Integration}: Built a continuous mood feature extraction system using Music Information Retrieval (MIR) techniques, integrating deep learning-based audio signals into recommendation models.
+            \nn
+        }
+    \end{cvitems}
+}
+\nn \nn \nn
+
+\corpentry
+{Music Streaming Service of NAVER} % Title
+{Sungnam, Korea, Aug. 2015 ~ Nov. 2018} % Date(s)
+{NAVER's music streaming service has 0.8M+ memberships in 2018.} % Corp desc
+{} % Positions
+{ % Description(s) of tasks/responsibilities
+    \begin{cvitems}
+        \item {
+            \projtitle{Music Recommender System} \vv \\
+%            - \textbf{Real-time Audio Analysis}: Built an automated pipeline for real-time mood extraction from new releases, enabling immediate catalog integration and cold-start problem mitigation. \vv \\
+            - \textbf{Personalized Station}: Developed a real-time music station recommender incorporating continuous user feedback, achieving a 20\% user adoption rate through high-precision similarity search. \vv \\
+            - \textbf{Discovery Engine}: Implemented a song discovery system using hybrid collaborative and content-based filtering, leading to a 10\% increase in long-tail song discovery.
+%            - \textbf{Recommendation A/B Test Platform}: Designed and developed a A/B testing framework to evaluate and iterate on recommendation algorithms at scale.
+            \nn
+        }
+    \end{cvitems}
+}
+\end{cventries}

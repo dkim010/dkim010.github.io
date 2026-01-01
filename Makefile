@@ -8,7 +8,7 @@ requirements:
 	poetry export -f requirements.txt --output requirements.txt --without-hashes
 
 serve:
-	poetry run mkdocs serve
+	uv run mkdocs serve
 
 cv-build-image:
 	cd latex && docker build -t dkim010/mycv .
