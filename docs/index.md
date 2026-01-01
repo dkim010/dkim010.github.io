@@ -6,5 +6,5 @@ hide:
 ---
 
 # 
-![Alt text](resume.pdf){ type=application/pdf style="min-height:100vh;width:100%" }
+![Alt text](main.pdf){ type=application/pdf style="min-height:100vh;width:100%" }
 
