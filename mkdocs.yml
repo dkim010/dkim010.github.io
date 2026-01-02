@@ -71,4 +71,4 @@ extra:
 
 nav:
   - 'CV': index.md
-  - 'CV (Deprecated)': oldcv/index.html
+#  - 'CV (Deprecated)': oldcv/index.html
