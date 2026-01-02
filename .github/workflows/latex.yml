@@ -15,11 +15,11 @@ jobs:
       - name: compile latex
         uses: xu-cheng/latex-action@v3
         with:
-          working_directory: latex/src/
+          working_directory: latex/
           root_file: main.tex
           compiler: xelatex
       - name: upload pdf
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: latex/src/main.pdf
+          path: latex/main.pdf
