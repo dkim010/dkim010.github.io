@@ -9,10 +9,11 @@ serve:
 latex:
 	echo ${PWD}
 	docker run -it --rm \
-		-v ${PWD}/latex:/data:rw \
+		-v ${PWD}:/data:rw \
 		texlive/texlive:latest-full \
 		bash -c "echo start... \
-			&& cp -rf /data/src/* /data/build \
-			&& cd /data/build \
+			&& mkdir -p /data/latex-build \
+			&& cp -rf /data/latex/* /data/latex-build \
+			&& cd /data/latex-build \
 			&& xelatex main.tex"
-	cp latex/build/main.pdf latex/
+	cp latex-build/main.pdf latex/
